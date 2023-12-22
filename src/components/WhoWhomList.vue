@@ -16,7 +16,13 @@
 				</div>
 				<div v-else>
 					<p>Никому ничего не должен! Живет как хочет!</p>
-						<v-icon icon="mdi-emoticon-cool" size="x-large"></v-icon>
+					<div class="d-flex justify-space-around">
+						<v-icon
+							icon="mdi-thumb-up"
+							color="yellow-darken-2"
+							size="x-large"
+						></v-icon>
+					</div>
 				</div>
 			</div>
 		</div>

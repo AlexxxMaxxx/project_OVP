@@ -8,7 +8,7 @@
 			@input="updateInput"
 			class="text-field__input input"
 			name="text"
-		/>		
+		/>
 	</div>
 </template>
 

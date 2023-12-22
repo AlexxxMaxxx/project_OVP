@@ -8,7 +8,7 @@
 				<person-list :persons="getPersons" @remove="remove" />
 			</div>
 			<div class="persons__footer footer">
-				<app-button 
+				<app-button
 					block
 					class="next-btn"
 					:class="{ disabled: hasError }"
@@ -29,7 +29,7 @@ export default {
 	data() {
 		return {
 			buttonContent: 'Добавить продукты',
-			hasError: false, // later changed on true, initial length = 0
+			hasError: true,
 		}
 	},
 	components: {

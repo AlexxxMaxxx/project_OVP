@@ -17,7 +17,13 @@
 				</div>
 				<div v-if="whomWho.find(w => w.whom === person.id).who.length === 0">
 					<p>Никто ничего не должен, к сожалению.</p>
-					<v-icon icon="mdi-emoticon-frown" size="x-large"></v-icon>
+					<div class="d-flex justify-space-around">
+						<v-icon
+							icon="mdi-thumb-down"
+							color="red-lighten-2"
+							size="x-large"
+						></v-icon>
+					</div>
 				</div>
 			</div>
 		</div>

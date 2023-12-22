@@ -33,7 +33,7 @@ export default {
 	data() {
 		return {
 			buttonContent: 'Получить результаты',
-			hasError: false, // later changed on true, initial length = 0
+			hasError: true,
 		}
 	},
 	components: {

@@ -8,7 +8,10 @@
 			<span>сайт</span>
 		</h1>
 
-		<app-button size="x-large" class="next-btn" @click="$router.push('/persons')"
+		<app-button
+			size="x-large"
+			class="next-btn"
+			@click="$router.push('/persons')"
 			>Дальше</app-button
 		>
 	</div>

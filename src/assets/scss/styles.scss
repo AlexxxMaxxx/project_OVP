@@ -21,7 +21,7 @@ body {
 			$light-background-color 100%
 		),
 		url('@/assets/img/IMG_8533.JPG');
-	height: $body-height;
+	min-height: $body-height;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -47,11 +47,17 @@ body {
 	&__content {
 		padding: 10px 10px 0px;
 		flex-shrink: 2;
+		min-height: calc(100vh - 55vh);
 	}
 	&__footer {
 		padding: 10px;
 		flex-shrink: 1;
+		min-height: 5vh;
 	}
+}
+
+.products__header {
+	height: 30vh;
 }
 
 .header-list {

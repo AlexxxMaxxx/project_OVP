@@ -1,24 +1,6 @@
 export const personModule = {
 	state: () => ({
-		persons: [
-			/*потом очистить*/
-			{
-				id: 1,
-				name: 'Настя',
-				debts: [],
-				/*	debts: [{
-					id: 2,
-					amount: 500
-				}, {
-					id: 3,
-					amount: 200
-				}] */
-			},
-			{ id: 2, name: 'Вероника', debts: [] },
-			{ id: 3, name: 'Вика', debts: [] },
-			{ id: 4, name: 'Саша', debts: [] },
-			{ id: 5, name: 'Кодя', debts: [] },
-		],
+		persons: [],
 	}),
 	getters: {
 		getPersons(state) {
@@ -30,7 +12,6 @@ export const personModule = {
 	},
 	mutations: {
 		setPersons(state, persons) {
-			// удалить?
 			state.persons = persons
 		},
 		addPerson(state, newPerson) {

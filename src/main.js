@@ -11,8 +11,4 @@ loadFonts()
 const app = createApp(App)
 components.forEach(component => app.component(component.name, component))
 
-app
-  .use(router)
-  .use(store)
-  .use(vuetify)
-  .mount('#app')
+app.use(router).use(store).use(vuetify).mount('#app')

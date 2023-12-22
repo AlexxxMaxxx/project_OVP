@@ -28,7 +28,7 @@
 					>Количество
 				</app-input>
 			</div>
-	
+
 			<div class="product-form__select-form">
 				<div class="product-form__title">Кто оплачивал?</div>
 				<select class="product-form__select" v-model="payer">
@@ -44,7 +44,6 @@
 
 			<form class="product-form__checkbox-form">
 				<div class="product-form__title">Кто использовал?</div>
-
 				<div class="product-form__content">
 					<label class="product-form__checkbox">
 						<input

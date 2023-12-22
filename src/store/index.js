@@ -7,6 +7,4 @@ export default createStore({
 		person: personModule,
 		product: productModule,
 	},
-	// возможно не стоит делить на два модуля,
-	// а сделать 1 - функционал вообще чем-то отличается?
 })

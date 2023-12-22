@@ -5,47 +5,32 @@
 				<h1>Результаты</h1>
 			</div>
 			<div class="results__content content">
-				<!--<div class="results__btns">-->
-					<!--<app-button
-						class="results_select-btn select-btn"
+				<v-btn-toggle
+					class="d-flex .align-sm-end justify-end flex-row pa-6"
+					rounded="1"
+					color="white"
+					group
+				>
+					<app-button
 						@click="whoWhomlist = true"
 						:class="{ selected: whoWhomlist }"
-						>Кто-кому</app-button
 					>
+						Кто-кому
+					</app-button>
+
 					<app-button
-						class="results_select-btn select-btn"
 						@click="whoWhomlist = false"
 						:class="{ selected: !whoWhomlist }"
-						>Кому-кто</app-button
-					>-->
-
-					<v-btn-toggle
-						class="d-flex .align-sm-end justify-end flex-row pa-6"
-	          rounded="1"
-						color="white"
-	          group
-	        >
-	          <app-button 
-						@click="whoWhomlist = true"
-						:class="{ selected: whoWhomlist }">
-	            Кто-кому
-	          </app-button>
-
-	          <app-button 
-						@click="whoWhomlist = false"
-						:class="{ selected: !whoWhomlist }">
-	            Кому-кто
-	          </app-button>
-	        </v-btn-toggle>
+					>
+						Кому-кто
+					</app-button>
+				</v-btn-toggle>
 
 				<WhoWhomList v-if="whoWhomlist" :persons="getPersons" />
 				<WhomWhoList v-else :persons="getPersons" :whomWho="whomWho" />
 			</div>
 			<div class="results__footer footer">
-				<app-button 
-				block
-				class="next-btn" 
-				@click="$router.push('/')"
+				<app-button block class="next-btn" @click="$router.push('/')"
 					>Заново</app-button
 				>
 			</div>
@@ -61,7 +46,6 @@ export default {
 	data: () => ({
 		whomWho: [],
 		whoWhomlist: true,
-
 	}),
 	components: {
 		WhoWhomList,

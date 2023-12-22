@@ -6,7 +6,7 @@
 			:isLabel="false"
 			v-model.trim="name"
 			type="text"
-			label="Имя" 
+			label="Имя"
 		/>
 		<app-button
 			class="person-form__add-btn add-btn"
