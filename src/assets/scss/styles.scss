@@ -41,13 +41,14 @@ body {
 	justify-content: space-between;
 
 	&__header {
+		margin-bottom: 10px;
 		padding: $indent 10px 0px;
 		flex-shrink: 1;
 	}
 	&__content {
 		padding: 10px 10px 0px;
 		flex-shrink: 2;
-		min-height: calc(100vh - 55vh);
+		min-height: calc(100vh - 65vh);
 	}
 	&__footer {
 		padding: 10px;
